@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cnj5angdgx5la"]
+[gd_scene load_steps=7 format=3 uid="uid://cnj5angdgx5la"]
 
+[ext_resource type="PackedScene" uid="uid://8ard20rrlsei" path="res://ESCENAS/FONS 1.tscn" id="1_77gh0"]
 [ext_resource type="Texture2D" uid="uid://dkixcsu66ci2" path="res://TILEMAP/tilemap.png" id="1_etl4f"]
 [ext_resource type="Texture2D" uid="uid://oiv480nrkj13" path="res://TILEMAP/tilemap-backgrounds.png" id="2_wxgjq"]
 
@@ -892,6 +893,8 @@ sources/0 = SubResource("TileSetAtlasSource_8brk8")
 sources/2 = SubResource("TileSetAtlasSource_r0trk")
 
 [node name="Node2D" type="Node2D"]
+
+[node name="FONS DE PANTALLA" parent="." instance=ExtResource("1_77gh0")]
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
