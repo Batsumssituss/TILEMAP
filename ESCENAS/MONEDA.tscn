@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://d16wfolj71jdi"]
+
+[ext_resource type="Texture2D" uid="uid://cpde2fk0q5c5c" path="res://MONEDA/tile_0151.png" id="1_wlj1u"]
+[ext_resource type="Texture2D" uid="uid://bpq1858joessw" path="res://MONEDA/tile_0152.png" id="2_s53lg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6vwi5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wlj1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s53lg")
+}],
+"loop": true,
+"name": &"moneda",
+"speed": 6.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_6vwi5")
+animation = &"moneda"
+frame_progress = 0.804199
