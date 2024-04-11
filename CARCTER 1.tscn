@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmj2wg43bebpi"]
+
+[ext_resource type="Texture2D" uid="uid://dbe543e68jdiw" path="res://CARACTERS/tile_0002.png" id="1_qkj5p"]
+[ext_resource type="Texture2D" uid="uid://b1jofmnroxthh" path="res://CARACTERS/tile_0003.png" id="2_hkwam"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_by8ks"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qkj5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hkwam")
+}],
+"loop": true,
+"name": &"CARACTER 1",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(-1, 1)
+scale = Vector2(1.83333, 1.83333)
+sprite_frames = SubResource("SpriteFrames_by8ks")
+animation = &"CARACTER 1"
+frame_progress = 0.821057
