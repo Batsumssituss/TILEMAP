@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cnj5angdgx5la"]
+[gd_scene load_steps=10 format=3 uid="uid://cnj5angdgx5la"]
 
 [ext_resource type="PackedScene" uid="uid://8ard20rrlsei" path="res://ESCENAS/FONS 1.tscn" id="1_77gh0"]
 [ext_resource type="Texture2D" uid="uid://dkixcsu66ci2" path="res://TILEMAP/tilemap.png" id="1_etl4f"]
@@ -1021,6 +1021,15 @@ terrain_set_0/terrain_0/color = Color(0.917647, 0, 0, 1)
 sources/0 = SubResource("TileSetAtlasSource_8brk8")
 sources/2 = SubResource("TileSetAtlasSource_r0trk")
 
+[sub_resource type="Gradient" id="Gradient_8f551"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xog3b"]
+gradient = SubResource("Gradient_8f551")
+fill = 1
+fill_from = Vector2(0.444444, 0.521368)
+fill_to = Vector2(0.858974, 0.128205)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="FONS DE PANTALLA" parent="." instance=ExtResource("1_77gh0")]
@@ -1037,3 +1046,9 @@ layer_0/tile_data = PackedInt32Array(1900544, 131072, 1, 1900545, 131072, 1, 190
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("4_lh06o")]
 position = Vector2(207, 507)
 scale = Vector2(1.33333, 1.41667)
+frame_progress = 0.369197
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(189, 460)
+scale = Vector2(0.316406, 0.316406)
+texture = SubResource("GradientTexture2D_xog3b")
