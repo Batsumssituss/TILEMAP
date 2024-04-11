@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://8ard20rrlsei" path="res://ESCENAS/FONS 1.tscn" id="1_77gh0"]
 [ext_resource type="Texture2D" uid="uid://dkixcsu66ci2" path="res://TILEMAP/tilemap.png" id="1_etl4f"]
 [ext_resource type="Texture2D" uid="uid://oiv480nrkj13" path="res://TILEMAP/tilemap-backgrounds.png" id="2_wxgjq"]
-[ext_resource type="PackedScene" uid="uid://cmj2wg43bebpi" path="res://CARCTER 1.tscn" id="4_lh06o"]
+[ext_resource type="PackedScene" uid="uid://cmj2wg43bebpi" path="res://CARACTERS/CARCTER 1.tscn" id="4_lh06o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8brk8"]
 resource_name = "TILE OBJECTES I TERRA"
@@ -1046,9 +1046,14 @@ layer_0/tile_data = PackedInt32Array(1900544, 131072, 1, 1900545, 131072, 1, 190
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("4_lh06o")]
 position = Vector2(207, 507)
 scale = Vector2(1.33333, 1.41667)
-frame_progress = 0.369197
+frame_progress = 0.674593
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(189, 460)
 scale = Vector2(0.316406, 0.316406)
+texture = SubResource("GradientTexture2D_xog3b")
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+position = Vector2(87, 408)
+scale = Vector2(4.08008, 4.08008)
 texture = SubResource("GradientTexture2D_xog3b")
