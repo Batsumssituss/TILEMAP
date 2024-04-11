@@ -21,4 +21,4 @@ animations = [{
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_6vwi5")
 animation = &"moneda"
-frame_progress = 0.804199
+frame_progress = 0.835273
